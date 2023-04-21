@@ -7,8 +7,8 @@ class mitarbeiter:
         self.id = id
         self.__hours = hours
 
-    #def __init__(self):
-    #  self.__init__(0, 'no_name', 0)
+    def __init__(self):
+      self.__init__(0, 'no_name', 0)
 
     def getHours(self):
         return self.__hours
