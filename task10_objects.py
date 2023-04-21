@@ -2,27 +2,27 @@ print('Task 10 - Objects')
 
 
 class mitarbeiter:
-    def __init__(self, id=0, name='no_name', hours=0):
+    def __init__(self, name='no_name', id=0, hours=0):
         self.name = name
         self.id = id
-        self.__hours = hours
-
-    #def __init__(self):
-    #  self.__init__(0, 'no_name', 0)
+        self.__hours = hours    
 
     def getHours(self):
         return self.__hours
 
     def setHours(self, hours):
         if (hours < 0 or hours > 50):
-            print("Die Arbeitsstunden müssen im Bereich 0-49 liegen")
+            print("Die Arbeitsstunden müssen im Bereich 0-49 liegen: {}" .format(hours))
         else:
             self.__hours = hours
 
+ma1 = mitarbeiter('Max Mustermann', 98738, 40)
+ma2 = mitarbeiter('Bruno Mustermann', 24512, 35)
 
-m = mitarbeiter(1, "Max", 40)
+print("Mitarbeiter {} hat die id {} und arbeitet {} Stunden die Woche." .format(ma1.name, ma1.id, ma1.getHours()))
+print("Mitarbeiter {} hat die id {} und arbeitet {} Stunden die Woche." .format(ma2.name, ma2.id, ma2.getHours()))
 
-print("Mitarbeiter: {} - {} - {}hours".format(m.id, m.name, m.getHours()))
-
-m2 = mitarbeiter()
-print("Mitarbeiter: {} - {} - {}hours".format(m2.id, m2.name, m2.getHours()))
+ma1.setHours(-1)
+ma1.setHours(51)
+ma1.setHours(35)
+print("Mitarbeiter {} hat die id {} und arbeitet {} Stunden die Woche." .format(ma1.name, ma1.id, ma1.getHours()))
