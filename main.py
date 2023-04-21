@@ -18,3 +18,6 @@ print('\n')
 
 import task9_functions
 print('\n')
+
+import task10_objects
+print('\n')
