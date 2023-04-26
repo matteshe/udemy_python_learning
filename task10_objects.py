@@ -22,7 +22,7 @@ ma2 = mitarbeiter('Bruno Mustermann', 24512, 35)
 print("Mitarbeiter {} hat die id {} und arbeitet {} Stunden die Woche." .format(ma1.name, ma1.id, ma1.getHours()))
 print("Mitarbeiter {} hat die id {} und arbeitet {} Stunden die Woche." .format(ma2.name, ma2.id, ma2.getHours()))
 
-ma1.setHours(-1)
+ma1.setHours(-10)
 ma1.setHours(51)
 ma1.setHours(35)
 print("Mitarbeiter {} hat die id {} und arbeitet {} Stunden die Woche." .format(ma1.name, ma1.id, ma1.getHours()))
